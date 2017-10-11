@@ -52,7 +52,7 @@ public class FixedConnecting implements WurmClientMod, PreInitable {
                                     "{" +
                                     "   com.wurmonline.client.WurmClientBase.logger.log(java.util.logging.Level.INFO, \"Waiting for server\");" +
                                     "}" +
-                                    "if(j==10){this.seconds++;}" +
+                                    "if(j%10==0){this.seconds++;}" +
 
 
                                     "$1 = \"Connecting... Please wait about 20 seconds, reconnect if nothing happened. \"+this.seconds+\" seconds passed.\";" +
